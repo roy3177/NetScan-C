@@ -33,25 +33,6 @@ Currently, it can serve as:
 - A base for building a GUI in the browser
 - An integration target for future web-based visualization
 
-NetScan-C
-├── include
-│   ├── parallel_scan.h
-│   ├── banner.h
-│   ├── port_utils.h
-│   ├── services.h 
-│   
-├── src
-│   ├── parallel_scan.c
-│   ├── banner.c
-│   ├── port_utils.c
-│   ├── services.c
-│   ├── scanner.c
-│
-├── report.html
-├── makefile
-└── README.md
-
-
 
 
 **Compilation:** To compile, using the provided Makefile:
