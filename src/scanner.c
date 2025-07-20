@@ -1,8 +1,13 @@
+
 /**
  * @author Roy Meoded
  * @date 12/07/2025
  * roymeoded2512@gmail.com
+ * 
+ * The main file of the program. It receives the IP address and port range from the user,
+ * validates the input, and then calls the parallel scanning function scan_ports_parallel.
  */
+
 
 #include <stdio.h>
 #include <stdlib.h>
