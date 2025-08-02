@@ -3,7 +3,7 @@ CFLAGS = -Wall -Wextra -pedantic -std=c99 -Iinclude
 
 SRC = src
 OBJ = obj
-BIN = scanner
+BIN = netscan
 
 OBJS = $(SRC)/scanner.o \
         $(SRC)/banner.o \

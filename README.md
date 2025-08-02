@@ -24,6 +24,33 @@ It scans a range of ports on a given IP address, detects which are open, and opt
 - `parallel_scan.c` – Handles multi-threaded scanning using select
 - `banner.c` – Contains logic to grab banner information from open ports
 
+## Running with Docker 🐳
+
+The project can be built and run  inside a Docker container.
+
+**Step 1:** Build the Docker image:
+```bash 
+sudo docker build -t netscan .
+
+```
+**Step 2:**Run the scanner inside Docker:
+``` bash
+sudo docker run --rm netscan ./netscan <IP> <START_PORT> <END_PORT>
+```
+
+**Example:** 
+```bash
+sudo docker run --rm netscan ./netscan 127.0.0.1 1 100
+```
+
+
+
+> ℹ️ **Note:** Inside Docker, 127.0.0.1 refers to the container itself.  
+> To scan your actual local network (e.g. 192.168.x.x), you may need to configure Docker networking.
+
+```markdown
+
+
 
 ## 📝 HTML Report 
 
@@ -49,6 +76,7 @@ NetScan-C
 │
 ├── report.html
 ├── makefile
+├── Dockerfile
 └── README.md
 
 
@@ -60,7 +88,7 @@ make
 ```
 **Running the Main Program:** To execute demos and examples:
 ``` bash
-./scanner <IP> <start_port> <end_port>
+./netscan <IP> <start_port> <end_port>
 ```
 
 
