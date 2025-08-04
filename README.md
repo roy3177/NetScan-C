@@ -33,7 +33,7 @@ The project can be built and run  inside a Docker container.
 sudo docker build -t netscan .
 
 ```
-**Step 2:**Run the scanner inside Docker:
+**Step 2:** Run the scanner inside Docker:
 ``` bash
 sudo docker run --rm netscan ./netscan <IP> <START_PORT> <END_PORT>
 ```
